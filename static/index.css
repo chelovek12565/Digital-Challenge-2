@@ -6,8 +6,6 @@
 
 body {
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     background-image: url(./images/bg.png);
     background-color: lightblue;
   }
