@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+<nav class="navbar navbar-expand-lg bg-clear">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color:white; font-family:Montserrat; font-style: normal;">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav" style="left: 64px; top: 31px">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#" style="color:white; font-family:Montserrat; font-style:medium">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white;  font-family:Montserrat; font-style:medium">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" style="color:white;  font-family:Montserrat; font-style:medium">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" style="color:white;  font-family:Montserrat; font-style:medium">Disabled</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+{% endblock %}

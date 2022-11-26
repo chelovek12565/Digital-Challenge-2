@@ -1,0 +1,19 @@
+/* background 1 */
+
+
+
+
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(./images/bg.png);
+    background-color: lightblue;
+  }
+
+
+.navbar {
+  left: 64px;
+  top: 31px
+}
