@@ -1,30 +1,59 @@
 {% extends "base.html" %}
 
 {% block content %}
-<link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
-<nav class="navbar navbar-expand-lg bg-clear">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color:white; font-family:Montserrat; font-style: normal;">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav" style="left: 64px; top: 31px">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#" style="color:white; font-family:Montserrat; font-style:medium">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:white;  font-family:Montserrat; font-style:medium">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" style="color:white;  font-family:Montserrat; font-style:medium">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" style="color:white;  font-family:Montserrat; font-style:medium">Disabled</a>
-          </li>
-        </ul>
+<div class="bg-image">
+  <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+  <nav class="navbar navbar-expand-lg bg-clear">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" >
+          <?xml version="1.0" encoding="UTF-8"?>
+          <svg width="64px" height="80px" viewBox="0 0 256 305" version="1.1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+              <title>Payload</title>
+              <g>
+                  <path d="M116.204338,0 L256,84.0314829 L256,243.530232 L150.735428,304.426681 L150.735428,144.927526 L10.7718249,61.0076104 L116.204338,0 Z M105.488528,171.121391 L105.488528,295.584108 L0,232.129462 L105.488528,171.121391 Z" fill="#FFFFFF"></path>
+              </g>
+          </svg>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                  <li class="nav-item" style="margin-left: 17em;">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white; font-family:Montserrat-Medium;">Программа мероприятия</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 10em;">
+                    <a class="nav-link" href="#" style="color:white;  font-family:Montserrat-Medium;">Карта мероприятия</a>
+                  </li>
+                  <li class="nav-item" style="margin-left: 10em;">
+                    <a class="nav-link" href="#" style="color:white;  font-family:Montserrat-Medium;">Контакты</a>
+                  </li>
+            </div>
+          </ul>
+        </div>
+    </nav>
+    <h2 class="main-header">30 лет Сургутскому Государственному Университету</h2>
+    <p class="undertitle">Сайт навигатор приуроченный к тридцатилетию Сургутского Государственного Университета</p>
+    <button class="main-button" style="margin-left: 7%; margin-top: 2%; width: 20%; height: 7%;">
+<p style="font-family: Montserrat-Regular; font-size: 140%; color: white;">
+  Узнать больше</p></button>
+  </div>
+  <div class="container-1" id="container-1">
+    <!-- hello world -->
+     <h5 style="margin-top: 3em; text-align: center;">Краткая история</h5>
+     <br>
+     <div class="text-regular" style="text-align: center; margin-right: 3em;">
+      Датой создания университета является 14 апреля 1993 года, когда малым советом Сургутского городского Совета народных депутатов принято решение об организации в городе Сургуте университета. 26 мая того же года состоялось подписание учредительного договора о создании университета. Первым ректором вуза стал доктор физико-математических наук, профессор Георгий Иванович Назин (1940—2009)
+     </div>
+  </div>
+  <div class="container-2">
+    <div style="margin-left: 7%;">
+      <p style="font-family: Montserrat-Bold; color: white; margin-top: 3em; font-size: 1.3em;">Библиотека</p><br>
+      <img src="{{url_for('static', filename='images/1.jpg')}}" class="rightimg" style="width: 50em; height: auto;">
+      <div class="text-regular">Научная библиотека была открыта одновременно с университетом в 1993 году. НБ СурГУ неоднократно принимала участие в международных проектах и получила гранты Европейского сообщества. Входит в Российскую библиотечную ассоциацию (РБА) и Ассоциацию региональных библиотечных консорциумов «АРБИКОН». Приказом Министерства образования РФ № 1247 от 27.04.2000 г. научная библиотека Сургутского государственного университета утверждена методическим центром для библиотек образовательных учреждений ХМАО.
       </div>
     </div>
-  </nav>
+  </div>
+  <div></div>
 
 {% endblock %}

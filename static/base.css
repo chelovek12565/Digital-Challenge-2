@@ -1,26 +1,57 @@
-url { 
-    position: absolute;
-    width: 1920px;
-    height: 1073px;
-    left: 0px;
-    top: 0px;
-  }
-
+/* url {  */
+    /* position: absolute; */
+    /* width: 1920px; */
+    /* height: 1073px; */
+    /* left: 0px; */
+    /* top: 0px; */
+  /* } */
 
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Bold';
+    src: url('fonts/Montserrat-Bold.ttf');
+}
+
+
+@font-face {
+  font-family: 'Montserrat-Regular';
     src: url('fonts/Montserrat-Regular.ttf');
-  font-style: normal;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 43px;
-  line-height: 52px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Montserrat-Medium';
     src: url('fonts/Montserrat-Medium.ttf');
-  font-style: medium;
 }
 
+
+h5 {
+  font-family: 'Montserrat-Bold';
+  color: white;
+}
+
+.main-button {
+  border-radius: 3em;
+  background-color: #46599B;
+  border-color: #46599B;
+  box-shadow: #46599B;
+  border:#46599B
+}
+
+.rightimg  {
+  float: right;
+  margin: 3em 3em 3em 3em;
+  border-radius: 3em;
+ }
+
+ .text-regular {
+  text-align: left;
+  font-family:Montserrat-Regular;
+  margin-left: 3em;
+  margin-right: 3em;
+  color: white;
+  line-height: 3em;
+  font-size: 1.3em;
+ }
