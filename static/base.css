@@ -26,10 +26,21 @@
     src: url('fonts/Montserrat-Medium.ttf');
 }
 
+#st-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 h5 {
   font-family: 'Montserrat-Bold';
   color: white;
+}
+
+
+h1 {
+  font-family: 'Montserrat-Bold';
+  color: black;
 }
 
 

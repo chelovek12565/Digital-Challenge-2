@@ -3,7 +3,8 @@ from flask_login import LoginManager
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
-from bd import bd_session
+import bd.bd_session
+from bd.user import User
 import os
 
 app = Flask(__name__)
@@ -12,6 +13,7 @@ app.config['SECRET_KEY'] = "SUPER_MEGA_ULTRA_HYPER_SECRET_KEY"
 
 login_manager = LoginManager()
 login_manager.init_app(app)
+bd.bd_session.global_init('bd/main_bd.sqlite3')
 
 
 class LoginForm(FlaskForm):
@@ -22,9 +24,11 @@ class LoginForm(FlaskForm):
 @app.route('/login')
 def login_page():
     form = LoginForm()
+    bd_sess = bd.bd_session.create_session()
     if form.validate_on_submit():
         login = form.username.data 
         password = form.username.data
+        # user = bd_sess.
 
 
 @app.route('/')

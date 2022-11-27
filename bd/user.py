@@ -1,6 +1,6 @@
-import SqlAlchemyBase
+import sqlalchemy
 from sqlalchemy_serializer import SerializerMixin
-from .db_session import SqlAlchemyBase
+from .bd_session import SqlAlchemyBase
 
 
 class User(SqlAlchemyBase, SerializerMixin):
