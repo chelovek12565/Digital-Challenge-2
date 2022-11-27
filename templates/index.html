@@ -34,26 +34,50 @@
     </nav>
     <h2 class="main-header">30 лет Сургутскому Государственному Университету</h2>
     <p class="undertitle">Сайт навигатор приуроченный к тридцатилетию Сургутского Государственного Университета</p>
-    <button class="main-button" style="margin-left: 7%; margin-top: 2%; width: 20%; height: 7%;">
-<p style="font-family: Montserrat-Regular; font-size: 140%; color: white;">
-  Узнать больше</p></button>
+      <a href="#start" class="btn" style="margin-left: 7%; margin-top: 2%; width: 20%; height: 7%; background-color: #46599B; border-radius: 3em;">
+      <p style="font-family: Montserrat-Regular; font-size: 140%; color: white;" href="#start">
+        Узнать больше</p></a>
   </div>
   <div class="container-1" id="container-1">
     <!-- hello world -->
-     <h5 style="margin-top: 3em; text-align: center;">Краткая история</h5>
+     <h5 style="margin-top: 3em; text-align: center;" id="start">Краткая история</h5>
      <br>
-     <div class="text-regular" style="text-align: center; margin-right: 3em;">
+     <div class="text-regular" style="text-align: center; margin-right: 3em; margin-bottom: 3em;">
       Датой создания университета является 14 апреля 1993 года, когда малым советом Сургутского городского Совета народных депутатов принято решение об организации в городе Сургуте университета. 26 мая того же года состоялось подписание учредительного договора о создании университета. Первым ректором вуза стал доктор физико-математических наук, профессор Георгий Иванович Назин (1940—2009)
      </div>
   </div>
   <div class="container-2">
     <div style="margin-left: 7%;">
       <p style="font-family: Montserrat-Bold; color: white; margin-top: 3em; font-size: 1.3em;">Библиотека</p><br>
-      <img src="{{url_for('static', filename='images/1.jpg')}}" class="rightimg" style="width: 50em; height: auto;">
+      <img src="{{url_for('static', filename='images/1.jpg')}}" class="rightimg" style="width: 50em; height: auto; margin-bottom: 2em;">
       <div class="text-regular">Научная библиотека была открыта одновременно с университетом в 1993 году. НБ СурГУ неоднократно принимала участие в международных проектах и получила гранты Европейского сообщества. Входит в Российскую библиотечную ассоциацию (РБА) и Ассоциацию региональных библиотечных консорциумов «АРБИКОН». Приказом Министерства образования РФ № 1247 от 27.04.2000 г. научная библиотека Сургутского государственного университета утверждена методическим центром для библиотек образовательных учреждений ХМАО.
       </div>
     </div>
   </div>
-  <div></div>
+  <div class="container-1">
+    <div style="margin-left: 5em; margin-top: 3em;">
+       <p class="text-bold" style="margin-left: 2em;">Корпуса</p>
+      <p class="text-regular">Университет имеет 2 корпуса:</p>
+      <img src="{{url_for('static', filename='images/2.jpg')}}" class="rightimg" style="width: 50em; height: auto; margin-bottom: 2em;">
+      <ul>
+        <li class="text-regular">
+          <span style="font-family: Montserrat-Bold;">Главный корпус "Корабль" </span>(проспект Ленина, 1): институт экономики и управления, институт гуманитарного образования и спорта, институт государства и права. Семиэтажный корпус полностью построен в 2007 году, его первая очередь — в 2005-м.
+        </li>
+        <li class="text-regular">
+          <span style="font-family: Montserrat-Bold;">Старый корпус "Университет" </span>(улица Энергетиков, 22): медицинский институт (лечебный факультет, факультет последипломного образования врачей), биологический факультет, факультет экологии, химико-технологический факультет, строительное отделение.
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="container text-center" style="font-family:Montserrat-Medium; margin-left: 6em; color:white; margin-top: 2em; font-size: 1.3em;">
+    <div class="row">
+      <div class="col" style="text-align: left;">
+        <p style="margin-bottom: 1em; font-family: Montserrat-Bold;">Telegram</p>@Alexey Chepaikin<br>@Senku7981
+      </div>
+      <div class="col" style="text-align: left;">
+        <p style="margin-bottom: 1em; font-family: Montserrat-Bold;">E-mail:</p>chepaykin_av@surgu.ru
+      </div>
+    </div>
+  </div>
 
 {% endblock %}
