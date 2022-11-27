@@ -41,17 +41,17 @@
     </div>
     {% endfor %}
     <div class="dropdown">
-      <a class="btn btn-prinary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Кем вы являетесь
+      <a class="btn btn-prinary" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="background-color:#445698">
+          <span style="color:white">Кем вы являетесь</span>
       </a>
-
+    <br>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Студент</a></li>
         <li><a class="dropdown-item" href="#">Гость</a></li>
         <li><a class="dropdown-item" href="#">Преподаватель</a></li>
       </ul>
     </div>
-
+    <br>
     <p>{{ form.submit(type="submit", class="btn btn-primary") }}</p>
 
 </form>
