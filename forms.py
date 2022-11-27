@@ -3,4 +3,3 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired
 
 
-class LoginFo
